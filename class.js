@@ -34,21 +34,125 @@
 // METHOD
 // function on class are methods
 // when defining these method we dont use the function keyword.we start directly with the name
-class Person{
-    constructor(firstName,lastName){
-        this.firstName=firstName;
-        this.lastName=lastName;
-         }
-    greet(){
-        console.log("hi there! I'm", this.firstName);
-    }
-    compliment(name,object){
-        return "that's a wonderful" + object + "," +name;
-    }
-}
+// class Person{
+//     constructor(firstName,lastName){
+//         this.firstName=firstName;
+//         this.lastName=lastName;
+//          }
+//     greet(){
+//         console.log("hi there! I'm", this.firstName);
+//     }
+//     compliment(name,object){
+//         return "that's a wonderful" + object + "," +name;
+//     }
+// }
 
-let p=new Person("pari","bindal");
-p.greet();
-let compliment=p.compliment("Harry","hat");
-console.log(compliment);
+// let p=new Person("pari","bindal");
+// p.greet();
+// let compliment=p.compliment("Harry","hat");
+// console.log(compliment);
+
+//properties
+// class person{
+//     #firstname;
+//     #lastname;
+// constructor(firstname,lastname) {
+//     this.#firstname= firstname;
+//     this.#lastname= lastname;
+// }
+
+
+// constructor(firstname, lastname){
+//     if(firstname.startsWith("M")){
+//         this.#firstname=firstname;
+//     }else{
+//         this.#firstname= "M" + firstname;
+//     }
+//     this.#lastname= lastname;
+// }
+// }
+// let p= new person("kay", "moon");
+// console.log("hi",p.#firstName);
+
+// class person{
+//     #firstname;
+//     #lastname;
+// constructor(firstname,lastname) {
+//     this.#firstname= firstname;
+//     this.#lastname= lastname;
+// }
+// get firstname(){
+//     return this.#firstname;
+// }
+// set firstname(firstname){
+//     this.#firstname=firstname;
+// }
+// get lastname(){
+//     return this.#lastname;
+// }
+// set lastname(lastname){
+//     this.#lastname=lastname;
+// }
+// }
+// let p = new person("pari","bindal");
+// console.log(p.firstname);
+// console.log(p.lastname);
+// p.firstname = "kirti";
+// console.log(p.firstname);
+// p.lastname = "bindal";
+// console.log(p.lastname);
+
+// inheritance--reusability of code
+//class can have child class that inherit the prop and method from parent class
+// the super word in the constructor is calling the constructor from the parent
+// we cannot access any motorcycle specific prop or method in our vehicle class.
+// class vehicle{
+//     constructor(color,currentspeed,maxspeed){
+//         this.color=color;
+//         this.currentspeed=currentspeed;
+//         this.maxspeed=maxspeed;
+//     }
+//     move(){
+//         console.log("moving at", this.currentspeed);
+//     }
+//     accelerate(amount){
+//         this.currentspeed += amount;
+//     }
+// }
+// class motorcycle extends vehicle{
+//     constructor(color,currentspeed,maxspeed,fuel){
+//         super(color,currentspeed,maxspeed);
+//         this.fuel=fuel;
+//     }
+//     dowheelie(){
+//         console.log("driving on one wheel!")
+//     }
+// }
+// let motor= new motorcycle("black",0,250,"gasoline");
+// console.log(motor.color);
+// console.log(motor.fuel);
+// motor.accelerate(50);
+// motor.move();
+
+// PROTOTYPES
+// makes it possible to have objects
+// class person{
+//     constructor(firstname,lastname) {
+//         this.firstname= firstname;
+//         this.lastname=  lastname;
+//     }
+//     greet(){
+//         console.log("hi.there!");
+//     }
+// }
+// person.prototype.introduce= function(){
+//     console.log("Hi, I'm", this.firstname);
+// };
+// person.prototype.favcolor="green";
+// let p=new person("pari","binda;");
+// console.log((p.favcolor));
+// p.introduce();
+
+
+
 
