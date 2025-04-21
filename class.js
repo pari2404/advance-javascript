@@ -136,22 +136,22 @@
 
 // PROTOTYPES
 // makes it possible to have objects
-// class person{
-//     constructor(firstname,lastname) {
-//         this.firstname= firstname;
-//         this.lastname=  lastname;
-//     }
-//     greet(){
-//         console.log("hi.there!");
-//     }
-// }
-// person.prototype.introduce= function(){
-//     console.log("Hi, I'm", this.firstname);
-// };
-// person.prototype.favcolor="green";
-// let p=new person("pari","binda;");
-// console.log((p.favcolor));
-// p.introduce();
+class person{
+    constructor(firstname,lastname) {
+        this.firstname= firstname;
+        this.lastname=  lastname;
+    }
+    greet(){
+        console.log("hi.there!");
+    }
+}
+person.prototype.introduce= function(){
+    console.log("Hi, I'm", this.firstname);
+};
+person.prototype.favcolor="green";
+let p=new person("pari","binda;");
+console.log((p.favcolor));
+p.introduce();
 
 
 
