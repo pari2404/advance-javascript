@@ -149,7 +149,7 @@ person.prototype.introduce= function(){
     console.log("Hi, I'm", this.firstname);
 };
 person.prototype.favcolor="green";
-let p=new person("pari","binda;");
+let p=new person("pari","bindal");
 console.log((p.favcolor));
 p.introduce();
 
